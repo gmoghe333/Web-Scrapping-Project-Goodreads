@@ -103,10 +103,8 @@ def main():
             All_Genre_List.append([One_Genre_list[x][0],One_Genre_list[x][1],One_Genre_list[x][2],One_Genre_list[x][3],One_Genre_list[x][4],One_Genre_list[x][5]])
     #show data in form of table
     df = DataFrame (All_Genre_List,columns=['Genre','Book','Author','Votes','URL','Stars'])
-    
-    df.to_csv(r"D:\Project2.csv",index=False)
-
-    print(df)
+    #we save the dataframe as csv file in D:\ folder and I have named it Project_Goodreads.csv
+    df.to_csv(r"D:\Project_Goodreads.csv",index=False)
 
 if __name__ == "__main__": 
     #Getting dependencies
